@@ -54,6 +54,6 @@ box-shadow: 10px 10px 30px black;
 .name{
     display: block;
     text-align:end;
-    color: darkred;
+    color: rgb(37, 21, 207);
     padding: 0 50px;
 }
