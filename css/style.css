@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@keyframes hamid {
+    from{
+box-shadow: 5px 5px 20px black;
+    }
+    to{
+box-shadow: 10px 10px 30px black;
+    }
+    
+}
+
+    
+
+.container{
+    display: flex;
+}
+.card{
+    width: 280px;
+    height: 360px;
+    box-shadow: 5px 5px 18px black;
+    margin: 50px;
+    animation-name: hamid;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    border-radius: 13px;
+}
+.card:hover{
+    transform: translateY(30px);
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.info{
+    text-align: center;
+}
+.info h1{
+    margin: 20px;
+}
+.info p{
+    margin: 20px;
+}
