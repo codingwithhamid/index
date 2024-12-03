@@ -31,8 +31,10 @@ box-shadow: 10px 10px 30px black;
     animation-iteration-count: 1;
     animation-direction: alternate;
     border-radius: 13px;
+    cursor: pointer;
 }
 .card:hover{
+    transition: all .5s ease;
     transform: translateY(30px);
 }
 
@@ -51,9 +53,27 @@ box-shadow: 10px 10px 30px black;
 .info p{
     margin: 20px;
 }
-.name{
-    display: block;
-    text-align:end;
-    color: rgb(37, 21, 207);
-    padding: 0 50px;
+@media (max-width: 800px) {
+    body{
+        background-color: aqua;
+    }
+    .container{
+        display: block;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+@media (max-width:300px) {
+    .card{
+        width: 250px ;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
